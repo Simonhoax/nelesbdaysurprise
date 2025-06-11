@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise for Nele</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="centerMessage">Enter Neles B-Day Surprise</div>
+
+    <!-- Video Background -->
+    <video autoplay loop muted class="video-bg">
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Bali the Turtle's Entrance -->
+    <div id="baliIntro" class="hidden">
+        <img src="turtle.png" class="bali-turtle" alt="Bali the turtle">
+        <div class="speech-bubble"></div>
+    </div>
+
+
+    <!-- Birthday Message Background -->
+    <div id="birthdayMessageContainer" class="hidden">
+        <h1 id="birthdayMessage">🎉 Happy Birthday, Nele! 🎉</h1>
+    </div>
+
+    <!-- Birthday Form -->
+    <form id="birthdayForm" class="hidden">
+        <label for="name">Your First Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="birthday">Your Birthdate:</label>
+        <input type="date" name="birthday" id="birthday" required>
+
+        <label for="question">everybody is a stormtrooper they all...</label>
+        <input type="text" name="answer" id="question" placeholder="_i__ __" required>
+
+        <button type="submit">Reveal Surprise!</button>
+    </form>
+
+    <!-- Surprise Coupon -->
+    <div id="coupon" class="hidden">
+        <h2 id="couponText"></h2>
+    </div>
+
+    <!-- Exploration Form -->
+    <form id="explorationForm" class="hidden" action="https://formspree.io/f/mzzgeppe" method="POST">
+        <label for="accomplice">Fish spotting accomplice:</label>
+        <input type="text" name="accomplice" id="accomplice" placeholder="Enter name" required>
+        
+        <label for="date">Exploration date:</label>
+        <input type="date" name="date" id="date" required>
+
+        <button type="submit">Submit Exploration Details</button>
+    </form>
+
+    <!-- Animated Elements Wrapper -->
+    <div class="animation-wrapper">
+        <!-- Animated Bubbles -->
+        <div class="bubble" style="left: 20%;"></div>
+        <div class="bubble" style="left: 50%;"></div>
+        <div class="bubble" style="left: 80%;"></div>
+
+        <!-- Swimming Fish -->
+        <img src="clownfish.png" class="clownfish" alt="Clownfish">
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
