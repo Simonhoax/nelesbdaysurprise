@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const birthday = document.getElementById("birthday").value.replace(/\./g, "-");
         const answer = document.getElementById("question").value.trim().toLowerCase();
 
-        if (name === "nele" && (birthday === "1999-06-12" || birthday === "12-06-1999") && answer === "6") {
+        if (name === "nele" && (birthday === "1999-06-12" || birthday === "12-06-1999") && answer === "miss me") {
             alert("Correct values! Revealing surprise...");
             birthdayContainer.style.display = "none";
             birthdayForm.style.display = "none";
